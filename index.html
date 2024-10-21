@@ -23,17 +23,41 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @media screen and (max-width: 640px) {
+        .ctr {
+          text-align: center;
+          width: 100%;
+        }
+        .navbar-brand {
+          margin: 0 auto;
+        }
+        .navbar-toggler {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgba(27, 58, 143, 255)"
+    >
       <div class="container-fluid">
         <a
-          class="navbar-brand fw-bold text-primary"
+          class="navbar-brand fw-bold text-primary ctr"
           style="font-family: 'Poppins', sans-serif"
           href="#"
-          >Helloo Mobiles</a
         >
+          <img
+            src="./assets/logo.png"
+            alt="logo"
+            width="150"
+            height="50"
+            style="object-fit: contain; object-position: center"
+        /></a>
 
         <button
           class="navbar-toggler"
@@ -51,16 +75,18 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <!-- Changed to ms-auto for right alignment -->
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link text-white" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link text-white" href="#testimonials"
+                >Testimonials</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#location">Location</a>
+              <a class="nav-link text-white" href="#location">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
+              <a class="nav-link text-white" href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
